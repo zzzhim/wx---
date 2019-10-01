@@ -1,0 +1,1 @@
+export const baseUrl = "http://bl.7yue.pro/v1"

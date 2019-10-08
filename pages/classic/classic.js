@@ -1,5 +1,16 @@
-// pages/classic/classic.js
 Page({
+    handleClickLike() {
+        wx.$request({
+            url: '/classic/latest',
+        }).then(
+            res => {
+                console.log(res)
+            },
+            err => {
+                console.log(err)
+            }
+        )
+    },
 
     /**
      * 页面的初始数据
@@ -12,6 +23,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        this.handleClickLike()
     },
 
     /**

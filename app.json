@@ -3,12 +3,13 @@
         "pages/classic/classic"
     ],
     "window": {
-      "navigationBarBackgroundColor": "#ffffff",
-      "navigationBarTextStyle": "black",
-      "navigationBarTitleText": "小程序",
-      "backgroundColor": "#ffffff",
-      "backgroundTextStyle": "light",
-      "enablePullDownRefresh": false,
-      "navigationStyle": "default"
-    }
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "小程序",
+        "backgroundColor": "#ffffff",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "default"
+    },
+    "sitemapLocation": "sitemap.json"
 }

@@ -1,4 +1,5 @@
 import { getLatest } from "../../api/classic.js"
+import { handleLike } from "../../api/like.js"
 
 Page({
     handleClickLike() {
@@ -11,6 +12,17 @@ Page({
             .catch(err => {
                 console.log(err)
             })
+    },
+
+    onLike(event) {
+        const { behavior } = event.detail
+        const { id, type } = this.data.classicData
+
+        handleLike({
+            behavior,
+            artID: id,
+            category: type
+        })
     },
 
     /**

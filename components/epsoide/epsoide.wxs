@@ -1,0 +1,7 @@
+function _handleIndex(newVal) {
+    return newVal < 10 ? '0' + newVal : newVal
+}
+
+module.exports = {
+    _handleIndex: _handleIndex
+}

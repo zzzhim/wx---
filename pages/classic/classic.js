@@ -1,22 +1,23 @@
+import { getLatest } from "../../api/classic.js"
+
 Page({
     handleClickLike() {
-        wx.$request({
-            url: '/classic/latest',
-        }).then(
-            res => {
-                console.log(res)
-            },
-            err => {
+        getLatest()
+            .then(res => {
+                this.setData({
+                    classicData: res
+                })
+            })
+            .catch(err => {
                 console.log(err)
-            }
-        )
+            })
     },
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        classicData: {}
     },
 
     /**
